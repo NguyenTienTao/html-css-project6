@@ -3,7 +3,7 @@
 .container,
 .container-fluid {
     --column-size: 12;
-    --spacer: 10px;
+    --spacer: 40px;
 
     width: 100%;
     margin-left: auto;
@@ -101,6 +101,14 @@
 
 .row-cols-2 > * {
     --row-cols-number: 2;
+}
+
+.row-cols-2 > *:nth-child(2n + 1) {
+    margin-left: calc(-1 * var(--spacer) / 2);
+}
+
+.row-cols-2 > *:nth-child(2n) {
+    margin-right: calc(-1 * var(--spacer) / 2);
 }
 
 .row-cols-3 > * {

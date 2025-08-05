@@ -4,6 +4,85 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Project 06</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +95,424 @@
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container container__header">
+                <div class="header__inner row">
+                    <div class="header__info">
+                        <div class="header__icon-wrap">
+                            <img
+                                src="./assets/icons/letter.svg"
+                                alt=""
+                                class="header__icon"
+                            />
+                        </div>
+                        <span class="header__email">hi@arif.interactive</span>
+                        <button class="header__btn">
+                            <img
+                                src="./assets/icons/menu.svg"
+                                alt=""
+                                class="header__icon-menu"
+                            />
+                        </button>
+                    </div>
+                    <img
+                        src="./assets/icons/logo.svg"
+                        alt=""
+                        class="header__logo"
+                    />
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Projects</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Journey</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Service</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner row">
+                        <figure class="hero__img-wrap">
+                            <img
+                                src="./assets/img/hero-img.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                        </figure>
+                        <div class="section hero__content">
+                            <h1 class="hero__heading">
+                                An Interactive Designer
+                            </h1>
+                            <p class="hero__desc section-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                            <div class="hero__cta">
+                                <a href="#!" class="hero__cta-btn btn"
+                                    >Book a Call</a
+                                >
+                                <a href="#!" class="hero__cta-link">My Works</a>
+                            </div>
+                            <div class="hero__contact">
+                                <span class="hero__contact-intro"
+                                    >Follow me on:</span
+                                >
+                                <div class="hero__contact-socials">
+                                    <div class="hero__contact-icon">
+                                        <img
+                                            src="./assets/icons/be.svg"
+                                            alt=""
+                                            class="hero__icon"
+                                        />
+                                    </div>
+                                    <div class="hero__contact-icon">
+                                        <img
+                                            src="./assets/icons/basketball.svg"
+                                            alt=""
+                                            class="hero__icon"
+                                        />
+                                    </div>
+                                    <div class="hero__contact-icon">
+                                        <img
+                                            src="./assets/icons/instagram.svg"
+                                            alt=""
+                                            class="hero__icon"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img
+                            src="./assets/img/hero-decor-2.svg"
+                            alt=""
+                            class="hero__decor"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Client -->
+            <section class="client">
+                <div class="container">
+                    <div class="client__inner row">
+                        <h2 class="client__heading">Meet my recent clients</h2>
+                        <div class="client__list">
+                            <img
+                                src="./assets/img/google.svg"
+                                alt="Google"
+                                class="client__item"
+                            />
+                            <img
+                                src="./assets/img/warner-bros.svg"
+                                alt="Warner Bros"
+                                class="client__item"
+                            />
+                            <img
+                                src="./assets/img/mailchamp.svg"
+                                alt="Mailchimp"
+                                class="client__item"
+                            />
+                            <img
+                                src="./assets/img/adobe.svg"
+                                alt="Adobe"
+                                class="client__item"
+                            />
+                            <img
+                                src="./assets/img/upwork.svg"
+                                alt="Upwork"
+                                class="client__item"
+                            />
+                            <img
+                                src="./assets/img/creative-cloude.svg"
+                                alt="Creative cloud"
+                                class="client__item"
+                            />
+                            <img
+                                src="./assets/img/woocommercde.svg"
+                                alt="Woocommercde"
+                                class="client__item"
+                            />
+                            <img
+                                src="./assets/img/canva.svg"
+                                alt="Canva"
+                                class="client__item"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Speciality -->
+            <section class="speciality">
+                <div class="container">
+                    <h2 class="speciality__heading section-heading">
+                        Specialities
+                    </h2>
+                    <p class="speciality__desc section-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+                    <div
+                        class="speciality__list row row-cols-lg-3 row-cols-md-3 row-cols-1"
+                    >
+                        <article class="speciality-item">
+                            <div class="speciality-item__content">
+                                <div class="speciality-item__wrap">
+                                    <img
+                                        src="./assets/icons/light-bulb.svg"
+                                        alt=""
+                                        class="speciality-item__icon"
+                                    />
+                                </div>
+                                <h3 class="speciality-item__title">
+                                    Product design
+                                </h3>
+                                <p class="speciality-item__desc section-desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="speciality-item">
+                            <div class="speciality-item__content">
+                                <div class="speciality-item__wrap">
+                                    <img
+                                        src="./assets/icons/school-supplies.svg"
+                                        alt=""
+                                        class="speciality-item__icon"
+                                    />
+                                </div>
+                                <h3 class="speciality-item__title">
+                                    UI/UX Design
+                                </h3>
+                                <p class="speciality-item__desc section-desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="speciality-item">
+                            <div class="speciality-item__content">
+                                <div class="speciality-item__wrap">
+                                    <img
+                                        src="./assets/icons/phone.svg"
+                                        alt=""
+                                        class="speciality-item__icon"
+                                    />
+                                </div>
+                                <h3 class="speciality-item__title">
+                                    Interactive design
+                                </h3>
+                                <p class="speciality-item__desc section-desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project -->
+            <section class="project">
+                <div class="container">
+                    <section class="project__top row">
+                        <h2 class="project__heading section-heading">
+                            Take a look at my&nbsp;recent projects
+                        </h2>
+                        <p class="project__desc section-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
+                    </section>
+                    <div
+                        class="project__list row row-cols-lg-2 row-cols-md-2 row-cols-1"
+                    >
+                        <article class="project-item">
+                            <div class="project-item__inner">
+                                <div class="project-item__content">
+                                    <h3 class="project-item__name">
+                                        Wally Website
+                                    </h3>
+                                    <p class="project-item__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="project-item__link"
+                                        >Case Study</a
+                                    >
+                                </div>
+                                <figure class="project-item__wrap">
+                                    <img
+                                        src="./assets/img/wally-website.png"
+                                        alt="Wally Website"
+                                        class="project-item__thumb"
+                                    />
+                                </figure>
+                                <img
+                                    src="./assets/img/project-decor.svg"
+                                    alt=""
+                                    class="project-item__decor"
+                                />
+                            </div>
+                        </article>
+                        <article class="project-item">
+                            <div class="project-item__inner">
+                                <div class="project-item__content">
+                                    <h3 class="project-item__name">
+                                        Banking App
+                                    </h3>
+                                    <p class="project-item__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="project-item__link"
+                                        >Case Study</a
+                                    >
+                                </div>
+                                <figure class="project-item__wrap">
+                                    <img
+                                        src="./assets/img/banking-app.png"
+                                        alt="Banking App"
+                                        class="project-item__thumb"
+                                    />
+                                </figure>
+                                <img
+                                    src="./assets/img/project-decor.svg"
+                                    alt=""
+                                    class="project-item__decor"
+                                />
+                            </div>
+                        </article>
+                        <article class="project-item">
+                            <div class="project-item__inner">
+                                <div class="project-item__content">
+                                    <h3 class="project-item__name">Web App</h3>
+                                    <p class="project-item__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="project-item__link"
+                                        >Case Study</a
+                                    >
+                                </div>
+                                <figure class="project-item__wrap">
+                                    <img
+                                        src="./assets/img/web-app.png"
+                                        alt="Web App"
+                                        class="project-item__thumb"
+                                    />
+                                </figure>
+                                <img
+                                    src="./assets/img/project-decor.svg"
+                                    alt=""
+                                    class="project-item__decor"
+                                />
+                            </div>
+                        </article>
+                        <article class="project-item">
+                            <div class="project-item__inner">
+                                <div class="project-item__content">
+                                    <h3 class="project-item__name">
+                                        Oculus Website
+                                    </h3>
+                                    <p class="project-item__desc">
+                                        Lorem ipsum dolor amet, consectetur
+                                        adipiscing st elit.
+                                    </p>
+                                    <a href="#!" class="project-item__link"
+                                        >Case Study</a
+                                    >
+                                </div>
+                                <figure class="project-item__wrap">
+                                    <img
+                                        src="./assets/img/oculus-website.png"
+                                        alt="Oculus Website"
+                                        class="project-item__thumb"
+                                    />
+                                </figure>
+                                <img
+                                    src="./assets/img/project-decor.svg"
+                                    alt=""
+                                    class="project-item__decor"
+                                />
+                            </div>
+                        </article>
+                    </div>
+                    <div class="project__link">
+                        <a href="#!" class="btn project__all">All Projects</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interactive -->
+            <section class="interactive">
+                <div class="container">
+                    <div class="interactive__intro">
+                        <p class="interactive__hi">Hey,,,,It’s Arif</p>
+                        <img src="./assets/icons/hi.svg" alt="" />
+                    </div>
+                    <h2 class="interactive__heading section-heading">
+                        Interactive Designer
+                    </h2>
+                    <p class="interactive__desc section-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.
+                    </p>
+                    <div class="interactive__data">
+                        <div class="interactive__column">
+                            <span class="interactive__value">08+</span>
+                            <span class="interactive__title"
+                                >Years Experience</span
+                            >
+                        </div>
+                        <div class="interactive__column">
+                            <span class="interactive__value">21+</span>
+                            <span class="interactive__title"
+                                >Features & Awards</span
+                            >
+                        </div>
+                        <div class="interactive__column">
+                            <span class="interactive__value">97%</span>
+                            <span class="interactive__title"
+                                >Clients Rating</span
+                            >
+                        </div>
+                    </div>
+                    <div class="interactive__media row">
+                        <img
+                            src="./assets/img/interactive-img.png"
+                            alt=""
+                            class="interactive__video"
+                        />
+                        <div class="interactive__media-play">
+                            <img src="./assets/icons/play-video.svg" alt="" />
+                        </div>
+                        <a href="#!" class="btn interactive__media-intro"
+                            >Intro Video</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

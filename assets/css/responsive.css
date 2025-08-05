@@ -1,0 +1,29 @@
+@media screen and (min-width: 1200px) {
+    .container__header,
+    .container__footer {
+        width: 1330px;
+        max-width: calc(100% - 48px);
+    }
+
+    .header__btn {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .header__btn {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .header__btn {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+}
