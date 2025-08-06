@@ -1,5 +1,6 @@
 @media screen and (min-width: 1200px) {
     .container__header,
+    .container__about,
     .container__footer {
         width: 1330px;
         max-width: calc(100% - 48px);
