@@ -80,6 +80,7 @@ a {
 }
 
 .header__icon-wrap,
+.header__btn,
 .footer__icon-wrap {
     display: flex;
     align-items: center;
@@ -104,6 +105,7 @@ a {
 .navbar__list {
     display: flex;
     align-items: center;
+    margin-left: -22px;
     margin-right: -22px;
 }
 
@@ -133,15 +135,16 @@ a {
 
 .hero__img-wrap {
     position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     width: 44%;
 }
 
-.hero__img-wrap::before {
-    content: url(../img/hero-decor.svg);
+.hero__wrap-decor {
     position: absolute;
-    top: -80px;
-    right: -167px;
     z-index: -1;
+    width: 175%;
 }
 
 .hero__img {
@@ -291,7 +294,7 @@ a {
     width: 74px;
     height: 74px;
     border-radius: 50%;
-    border: 1px solid rgb(8, 4, 21, 0.05);
+    border: 1px solid rgb(8, 4, 21, 0.1);
 }
 
 .speciality-item__title {
@@ -305,6 +308,10 @@ a {
 
 .speciality-item__desc {
     margin-top: 15px;
+}
+
+.speciality__dots {
+    display: none;
 }
 
 /* ======= Project ======= */
@@ -525,7 +532,9 @@ a {
 
 /* ======= Comment ======= */
 .comment {
+    position: relative;
     margin-top: 150px;
+    padding-bottom: 74px;
 }
 
 .comment__heading {
@@ -594,7 +603,9 @@ a {
     line-height: 2.9rem; /* 181.25% */
 }
 
-.comment__dots {
+.comment__dots,
+.speciality__dots,
+.atmosphere__dots {
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -602,7 +613,9 @@ a {
     gap: 15px;
 }
 
-.comment__dot {
+.comment__dot,
+.speciality__dot,
+.atmosphere__dot {
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -611,7 +624,9 @@ a {
     cursor: pointer;
 }
 
-.comment__dot.active {
+.comment__dot.active,
+.speciality__dot.active,
+.atmosphere__dot.active {
     position: relative;
     display: flex;
     align-items: center;
@@ -623,7 +638,9 @@ a {
     opacity: 1;
 }
 
-.comment__dot.active::before {
+.comment__dot.active::before,
+.speciality__dot.active::before,
+.atmosphere__dot.active::before {
     content: "";
     position: absolute;
     display: inline-block;
@@ -633,13 +650,31 @@ a {
     border-radius: 50%;
 }
 
+.comment__decor-1,
+.comment__decor-2 {
+    position: absolute;
+}
+
+.comment__decor-1 {
+    bottom: 0;
+    left: 0;
+    width: 20%;
+}
+
+.comment__decor-2 {
+    bottom: 0;
+    right: 0;
+    width: 29%;
+}
+
 /* ======= Question ======= */
 .question {
-    margin-top: 169px;
+    margin-top: 95px;
 }
 
 .question__inner {
     width: 1010px;
+    max-width: 100%;
     margin-left: calc(-1 * var(--spacer) / 2);
 }
 
@@ -695,6 +730,7 @@ a {
 
 .question-item__btn::before {
     content: url(../icons/plus.svg);
+    translate: 1px 2px;
     position: absolute;
 }
 

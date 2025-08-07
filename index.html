@@ -111,20 +111,20 @@
                             />
                         </div>
                         <span class="header__email">hi@arif.interactive</span>
-                        <button class="header__btn">
+                        <label class="header__btn" for="header__checkbox">
                             <img
                                 src="./assets/icons/menu.svg"
                                 alt=""
                                 class="header__icon-menu"
                             />
-                        </button>
+                        </label>
                     </div>
                     <img
                         src="./assets/icons/logo.svg"
                         alt=""
                         class="header__logo"
                     />
-                    <nav class="navbar">
+                    <nav class="header__navbar">
                         <ul class="navbar__list">
                             <li class="navbar__item">
                                 <a href="#!" class="navbar__link">Projects</a>
@@ -141,7 +141,40 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="header__separation"></div>
             </div>
+        </header>
+
+        <!-- Tablet and Mobile Header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name="header__checkbox"
+                id="header__checkbox"
+                hidden
+            />
+            <label class="menu-overlay" for="header__checkbox"></label>
+            <nav class="menu-drawer">
+                <img
+                    src="./assets/icons/logo.svg"
+                    alt=""
+                    class="mobile-navbar__logo"
+                />
+                <ul class="mobile-navbar__list">
+                    <li class="mobile-navbar__item">
+                        <a href="#!" class="navbar__link">Projects</a>
+                    </li>
+                    <li class="mobile-navbar__item">
+                        <a href="#!" class="navbar__link">Journey</a>
+                    </li>
+                    <li class="mobile-navbar__item">
+                        <a href="#!" class="navbar__link">Service</a>
+                    </li>
+                    <li class="mobile-navbar__item">
+                        <a href="#!" class="navbar__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main>
@@ -154,6 +187,11 @@
                                 src="./assets/img/hero-img.png"
                                 alt=""
                                 class="hero__img"
+                            />
+                            <img
+                                src="./assets/img/hero-decor.svg"
+                                alt=""
+                                class="hero__wrap-decor"
                             />
                         </figure>
                         <div class="section hero__content">
@@ -327,6 +365,11 @@
                                 </p>
                             </div>
                         </article>
+                    </div>
+                    <div class="speciality__dots">
+                        <div class="speciality__dot"></div>
+                        <div class="speciality__dot active"></div>
+                        <div class="speciality__dot"></div>
                     </div>
                 </div>
             </section>
@@ -508,7 +551,7 @@
                             <img src="./assets/icons/play-video.svg" alt="" />
                         </div>
                         <a href="#!" class="btn interactive__media-intro"
-                            >Intro Video</a
+                            >INTRO VIDEO</a
                         >
                     </div>
                 </div>
@@ -630,6 +673,16 @@
                         <div class="comment__dot"></div>
                         <div class="comment__dot"></div>
                     </div>
+                    <img
+                        src="./assets/img/comment-decor.svg"
+                        alt=""
+                        class="comment__decor-1"
+                    />
+                    <img
+                        src="./assets/img/comment-decor-2.svg"
+                        alt=""
+                        class="comment__decor-2"
+                    />
                 </div>
             </section>
 
@@ -837,6 +890,13 @@
                                 class="atmosphere-item__img"
                             />
                         </figure>
+                    </div>
+                    <div class="atmosphere__dots">
+                        <div class="atmosphere__dot"></div>
+                        <div class="atmosphere__dot"></div>
+                        <div class="atmosphere__dot active"></div>
+                        <div class="atmosphere__dot"></div>
+                        <div class="atmosphere__dot"></div>
                     </div>
                 </div>
             </section>
